@@ -1,0 +1,27 @@
+# API 키 보호
+.env
+.env.local
+*.key
+
+# 개인정보 포함 보고서 (학교 제출용, GitHub에는 올리지 않음)
+report.md
+report.pdf
+report.docx
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 로그
+*.log

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오늘 산책 갈래? · 캠퍼스 산책지수</title>
+  <meta name="description" content="공공데이터 기상청·에어코리아 API로 계산하는 캠퍼스 시간대별 산책지수 + 코스 추천" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="layout">
+      <!-- ── 좌측 사이드: 헤더 + 점수/슬롯/대기/가이드 ── -->
+      <aside class="layout__side">
+        <header class="hero">
+          <div class="hero__chip" id="chipSchool">학교명 로딩중</div>
+          <h1 class="hero__title">오늘 산책 갈래?</h1>
+          <p class="hero__sub" id="heroSub">잠깐, 지금 데이터 받아오는 중이야…</p>
+        </header>
+        <section class="best-card" id="bestCard" hidden>
+          <div class="best-card__label">오늘 산책 황금시간</div>
+          <div class="best-card__time" id="bestTime">--시</div>
+          <div class="best-card__score" id="bestScore">점수 --</div>
+          <div class="best-card__detail" id="bestDetail">--</div>
+        </section>
+
+        <section class="schedule-card" id="scheduleCard" hidden>
+          <div class="schedule-card__head">
+            <h2 class="schedule-card__title">오늘의 산책 슬롯</h2>
+            <p class="schedule-card__sub">학교 일과 기준 · 클릭하면 지도로 안내</p>
+          </div>
+          <ul class="schedule-list" id="scheduleList"></ul>
+        </section>
+
+        <section class="air-card" id="airCard" hidden>
+          <div class="air-card__row">
+            <div>
+              <div class="air-card__label">미세먼지 (PM10)</div>
+              <div class="air-card__value" id="airPm10">--</div>
+            </div>
+            <div>
+              <div class="air-card__label">초미세먼지 (PM2.5)</div>
+              <div class="air-card__value" id="airPm25">--</div>
+            </div>
+          </div>
+          <div class="air-card__badge" id="airBadge">--</div>
+          <div class="air-card__meta" id="airMeta">측정소 정보</div>
+        </section>
+
+        <section class="howto" id="howtoSection" hidden>
+          <h2 class="howto__title">친구한테 약속 잡을 때</h2>
+          <ul class="howto__list">
+            <li>점수 <b>80↑</b> · "오늘 진짜 산책각이야"</li>
+            <li>점수 <b>60–79</b> · "괜찮긴 한데 그냥 그런 정도"</li>
+            <li>점수 <b>40–59</b> · "굳이 나갈 필요는…"</li>
+            <li>점수 <b>40 미만</b> · "오늘은 그냥 매점 가자"</li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- ── 우측 메인: 지도 + 코스 + 그리기 ── -->
+      <div class="layout__main">
+        <section class="map-section" id="mapSection">
+          <div class="map-section__head">
+            <h2 class="map-section__title">캠퍼스 산책 코스</h2>
+            <p class="map-section__sub">기숙사 학생용 · 학교 안에서만 도는 코스 · 위성 사진 위에 표시</p>
+          </div>
+          <div id="map" class="map"></div>
+
+          <div class="route-list" id="routeList"></div>
+
+          <div class="draw-panel">
+            <div class="draw-panel__head">
+              <div>
+                <div class="draw-panel__title">코스 그리기</div>
+                <div class="draw-panel__hint" id="drawHint">위성 사진에서 점을 찍어 산책 경로를 직접 만들어봐</div>
+              </div>
+              <button class="btn btn-primary" id="drawStart">코스 그리기 시작</button>
+            </div>
+
+            <div class="draw-panel__form" id="drawActions" hidden>
+              <div class="radio-row">
+                <label class="radio-card">
+                  <input type="radio" name="drawCategory" value="default" checked />
+                  <div class="radio-card__label">⭐ 기본 추천 코스로 등록</div>
+                  <div class="radio-card__hint">routes.json 에 추가될 JSON 생성 (모두에게 보임)</div>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="drawCategory" value="user" />
+                  <div class="radio-card__label">🚶 내 코스로 저장</div>
+                  <div class="radio-card__hint">이 브라우저에만 저장 (방문자 개인용)</div>
+                </label>
+              </div>
+
+              <input class="text-input" id="drawName" placeholder="코스 이름 (예: 운동장 한 바퀴)" maxlength="30" />
+              <div class="draw-panel__row">
+                <input class="text-input" id="drawMinutes" type="number" placeholder="예상 시간(분)" min="1" max="180" />
+                <input class="text-input" id="drawMinScore" type="number" placeholder="추천 최소 점수 (40~95)" min="0" max="100" value="60" />
+              </div>
+              <input class="text-input" id="drawSubtitle" placeholder="짧은 설명 (예: 친구랑 천천히)" maxlength="40" />
+
+              <div class="draw-panel__buttons">
+                <button class="btn btn-ghost" id="drawUndo">마지막 점 취소</button>
+                <button class="btn btn-primary" id="drawSave">저장</button>
+                <button class="btn btn-ghost" id="drawCancel">취소</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="jsonOutputWrap" hidden>
+            <div class="json-output__head">
+              <div class="json-output__title">routes.json 에 붙여넣을 JSON</div>
+              <button class="btn btn-primary" id="jsonCopy">클립보드 복사</button>
+            </div>
+            <pre class="json-output" id="jsonOutput"></pre>
+          </div>
+
+          <div class="user-routes" id="userRoutes"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ── 하단 전폭: 시간대별 ── -->
+    <section class="hourly" id="hourlySection" hidden>
+      <h2 class="hourly__title">시간대별 산책지수</h2>
+      <p class="hourly__hint">초록일수록 산책 좋은 시간이야 🌿</p>
+      <div class="hourly__grid" id="hourlyGrid"></div>
+    </section>
+
+    <footer class="foot">
+      <div class="foot__title">데이터 출처</div>
+      <ul class="foot__list">
+        <li>기상청 _ 단기예보 조회서비스 (공공데이터포털)</li>
+        <li>한국환경공단 _ 에어코리아 _ 대기오염정보 (공공데이터포털)</li>
+        <li>위성 영상: Esri, Maxar, Earthstar Geographics, GIS User Community</li>
+        <li>일반 지도: OpenStreetMap contributors</li>
+      </ul>
+      <div class="foot__updated" id="updatedAt">--</div>
+    </footer>
+  </main>
+
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+    <p>데이터 가져오는 중…</p>
+  </div>
+
+  <div class="error" id="error" hidden>
+    <p id="errorText">데이터를 불러오지 못했어. data.json이 있는지 확인해줘.</p>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
