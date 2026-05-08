@@ -465,6 +465,29 @@ def main() -> int:
 
     root = tk.Tk()
     WalkFinderApp(root, data, routes)
+
+    # --capture 옵션이면 잠시 후 자체 캡처 후 종료
+    if "--capture" in sys.argv:
+        def _capture():
+            try:
+                from PIL import ImageGrab
+                root.update_idletasks()
+                root.update()
+                x = root.winfo_rootx()
+                y = root.winfo_rooty()
+                w = root.winfo_width()
+                h = root.winfo_height()
+                shots = base_dir / "screenshots"
+                shots.mkdir(exist_ok=True)
+                img = ImageGrab.grab(bbox=(x, y, x + w, y + h))
+                img.save(shots / "app.png")
+                print(f"[OK] {shots / 'app.png'}")
+            except Exception as e:
+                print(f"[ERR] app 캡처 실패: {e}", file=sys.stderr)
+            finally:
+                root.after(100, root.destroy)
+        root.after(800, _capture)
+
     root.mainloop()
     return 0
 
