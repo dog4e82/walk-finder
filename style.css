@@ -542,6 +542,17 @@ html, body {
   font-size: 12px;
   line-height: 1.5;
 }
+.foot__author {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 13px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  border-radius: 8px;
+  display: inline-block;
+}
 .foot__title { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 12px; }
 .foot__list { margin: 0; padding: 0 0 0 16px; }
 .foot__list li { list-style: disc; margin: 2px 0; }
