@@ -1,42 +1,28 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-05-19T05:42",
+  "generated_at": "2026-05-19T07:10",
   "air": {
-    "pm10": 37.0,
-    "pm25": 19.0,
+    "pm10": 72.0,
+    "pm25": 26.0,
     "label": "보통",
     "station": "금마면",
-    "measured_at": "2026-05-19 05:00"
+    "measured_at": "2026-05-19 07:00"
   },
   "best_time": {
-    "datetime": "2026-05-19T06:00:00",
-    "hour": 6,
+    "datetime": "2026-05-19T07:00:00",
+    "hour": 7,
     "score": 88.0,
     "weather_score": 50.0,
     "air_score": 38.0,
-    "tmp": 15.0,
-    "pop": 0.0,
+    "tmp": 17.0,
+    "pop": 20.0,
     "wsd": 1.0,
-    "reh": 85.0,
-    "sky_text": "맑음",
+    "reh": 80.0,
+    "sky_text": "구름많음",
     "pty_text": "없음",
     "note": "산책 좋음"
   },
   "hourly": [
-    {
-      "datetime": "2026-05-19T06:00:00",
-      "hour": 6,
-      "score": 88.0,
-      "weather_score": 50.0,
-      "air_score": 38.0,
-      "tmp": 15.0,
-      "pop": 0.0,
-      "wsd": 1.0,
-      "reh": 85.0,
-      "sky_text": "맑음",
-      "pty_text": "없음",
-      "note": "산책 좋음"
-    },
     {
       "datetime": "2026-05-19T07:00:00",
       "hour": 7,
@@ -355,6 +341,34 @@
       "pop": 60.0,
       "wsd": 2.4,
       "reh": 80.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "강수 중"
+    },
+    {
+      "datetime": "2026-05-20T06:00:00",
+      "hour": 6,
+      "score": 55.0,
+      "weather_score": 17.0,
+      "air_score": 38.0,
+      "tmp": 18.0,
+      "pop": 60.0,
+      "wsd": 3.2,
+      "reh": 90.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "강수 중"
+    },
+    {
+      "datetime": "2026-05-20T07:00:00",
+      "hour": 7,
+      "score": 55.0,
+      "weather_score": 17.0,
+      "air_score": 38.0,
+      "tmp": 18.0,
+      "pop": 60.0,
+      "wsd": 2.6,
+      "reh": 90.0,
       "sky_text": "흐림",
       "pty_text": "비",
       "note": "강수 중"
