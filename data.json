@@ -1,42 +1,28 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-06-18T05:27",
+  "generated_at": "2026-06-18T07:50",
   "air": {
-    "pm10": 8.0,
+    "pm10": 9.0,
     "pm25": 5.0,
     "label": "좋음",
     "station": "삼천동",
-    "measured_at": "2026-06-18 05:00"
+    "measured_at": "2026-06-18 07:00"
   },
   "best_time": {
-    "datetime": "2026-06-18T06:00:00",
-    "hour": 6,
-    "score": 100.0,
-    "weather_score": 50.0,
+    "datetime": "2026-06-18T08:00:00",
+    "hour": 8,
+    "score": 95.0,
+    "weather_score": 45.0,
     "air_score": 50.0,
-    "tmp": 21.0,
+    "tmp": 23.0,
     "pop": 20.0,
-    "wsd": 1.1,
-    "reh": 95.0,
+    "wsd": 0.7,
+    "reh": 90.0,
     "sky_text": "구름많음",
     "pty_text": "없음",
     "note": "산책 좋음"
   },
   "hourly": [
-    {
-      "datetime": "2026-06-18T06:00:00",
-      "hour": 6,
-      "score": 100.0,
-      "weather_score": 50.0,
-      "air_score": 50.0,
-      "tmp": 21.0,
-      "pop": 20.0,
-      "wsd": 1.1,
-      "reh": 95.0,
-      "sky_text": "구름많음",
-      "pty_text": "없음",
-      "note": "산책 좋음"
-    },
     {
       "datetime": "2026-06-18T07:00:00",
       "hour": 7,
@@ -355,6 +341,34 @@
       "pop": 30.0,
       "wsd": 0.1,
       "reh": 100.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-06-19T06:00:00",
+      "hour": 6,
+      "score": 89.0,
+      "weather_score": 39.0,
+      "air_score": 50.0,
+      "tmp": 21.0,
+      "pop": 30.0,
+      "wsd": 0.3,
+      "reh": 95.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-06-19T07:00:00",
+      "hour": 7,
+      "score": 89.0,
+      "weather_score": 39.0,
+      "air_score": 50.0,
+      "tmp": 22.0,
+      "pop": 30.0,
+      "wsd": 0.1,
+      "reh": 95.0,
       "sky_text": "흐림",
       "pty_text": "없음",
       "note": "우산 챙기는 게 안전"
