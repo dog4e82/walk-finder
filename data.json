@@ -1,12 +1,12 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-06-20T02:24",
+  "generated_at": "2026-06-20T05:00",
   "air": {
-    "pm10": 8.0,
-    "pm25": 2.0,
+    "pm10": 2.0,
+    "pm25": 0.0,
     "label": "좋음",
     "station": "삼천동",
-    "measured_at": "2026-06-20 02:00"
+    "measured_at": "2026-06-20 04:00"
   },
   "best_time": {
     "datetime": "2026-06-20T19:00:00",
@@ -23,34 +23,6 @@
     "note": "산책 좋음"
   },
   "hourly": [
-    {
-      "datetime": "2026-06-20T03:00:00",
-      "hour": 3,
-      "score": 67.0,
-      "weather_score": 17.0,
-      "air_score": 50.0,
-      "tmp": 22.0,
-      "pop": 80.0,
-      "wsd": 3.9,
-      "reh": 95.0,
-      "sky_text": "흐림",
-      "pty_text": "비",
-      "note": "강수 중"
-    },
-    {
-      "datetime": "2026-06-20T04:00:00",
-      "hour": 4,
-      "score": 67.0,
-      "weather_score": 17.0,
-      "air_score": 50.0,
-      "tmp": 22.0,
-      "pop": 80.0,
-      "wsd": 2.8,
-      "reh": 95.0,
-      "sky_text": "흐림",
-      "pty_text": "비",
-      "note": "강수 중"
-    },
     {
       "datetime": "2026-06-20T05:00:00",
       "hour": 5,
@@ -355,6 +327,48 @@
       "pop": 30.0,
       "wsd": 0.9,
       "reh": 95.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-06-21T03:00:00",
+      "hour": 3,
+      "score": 89.0,
+      "weather_score": 39.0,
+      "air_score": 50.0,
+      "tmp": 19.0,
+      "pop": 30.0,
+      "wsd": 1.0,
+      "reh": 95.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-06-21T04:00:00",
+      "hour": 4,
+      "score": 89.0,
+      "weather_score": 39.0,
+      "air_score": 50.0,
+      "tmp": 19.0,
+      "pop": 30.0,
+      "wsd": 0.5,
+      "reh": 100.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-06-21T05:00:00",
+      "hour": 5,
+      "score": 89.0,
+      "weather_score": 39.0,
+      "air_score": 50.0,
+      "tmp": 18.0,
+      "pop": 30.0,
+      "wsd": 0.4,
+      "reh": 100.0,
       "sky_text": "흐림",
       "pty_text": "없음",
       "note": "우산 챙기는 게 안전"
