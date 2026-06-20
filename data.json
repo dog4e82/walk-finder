@@ -1,12 +1,12 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-06-20T23:26",
+  "generated_at": "2026-06-21T01:42",
   "air": {
-    "pm10": 19.0,
+    "pm10": 13.0,
     "pm25": 6.0,
     "label": "좋음",
     "station": "삼천동",
-    "measured_at": "2026-06-20 23:00"
+    "measured_at": "2026-06-21 01:00"
   },
   "best_time": {
     "datetime": "2026-06-21T07:00:00",
@@ -23,20 +23,6 @@
     "note": "산책 좋음"
   },
   "hourly": [
-    {
-      "datetime": "2026-06-21T00:00:00",
-      "hour": 0,
-      "score": 89.0,
-      "weather_score": 39.0,
-      "air_score": 50.0,
-      "tmp": 20.0,
-      "pop": 30.0,
-      "wsd": 3.5,
-      "reh": 95.0,
-      "sky_text": "흐림",
-      "pty_text": "없음",
-      "note": "우산 챙기는 게 안전"
-    },
     {
       "datetime": "2026-06-21T01:00:00",
       "hour": 1,
@@ -358,6 +344,34 @@
       "sky_text": "흐림",
       "pty_text": "없음",
       "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-06-22T00:00:00",
+      "hour": 0,
+      "score": 89.0,
+      "weather_score": 39.0,
+      "air_score": 50.0,
+      "tmp": 20.0,
+      "pop": 30.0,
+      "wsd": 0.7,
+      "reh": 90.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-06-22T01:00:00",
+      "hour": 1,
+      "score": 100.0,
+      "weather_score": 50.0,
+      "air_score": 50.0,
+      "tmp": 20.0,
+      "pop": 20.0,
+      "wsd": 1.0,
+      "reh": 90.0,
+      "sky_text": "구름많음",
+      "pty_text": "없음",
+      "note": "산책 좋음"
     }
   ]
 }
