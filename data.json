@@ -1,42 +1,28 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-07-04T05:20",
+  "generated_at": "2026-07-04T07:12",
   "air": {
-    "pm10": 21.0,
-    "pm25": 11.0,
+    "pm10": 28.0,
+    "pm25": 6.0,
     "label": "좋음",
     "station": "노송동",
-    "measured_at": "2026-07-04 05:00"
+    "measured_at": "2026-07-04 07:00"
   },
   "best_time": {
-    "datetime": "2026-07-04T06:00:00",
-    "hour": 6,
-    "score": 89.0,
-    "weather_score": 39.0,
+    "datetime": "2026-07-04T07:00:00",
+    "hour": 7,
+    "score": 84.0,
+    "weather_score": 34.0,
     "air_score": 50.0,
-    "tmp": 22.0,
+    "tmp": 23.0,
     "pop": 30.0,
-    "wsd": 0.8,
+    "wsd": 0.9,
     "reh": 95.0,
     "sky_text": "흐림",
     "pty_text": "없음",
     "note": "우산 챙기는 게 안전"
   },
   "hourly": [
-    {
-      "datetime": "2026-07-04T06:00:00",
-      "hour": 6,
-      "score": 89.0,
-      "weather_score": 39.0,
-      "air_score": 50.0,
-      "tmp": 22.0,
-      "pop": 30.0,
-      "wsd": 0.8,
-      "reh": 95.0,
-      "sky_text": "흐림",
-      "pty_text": "없음",
-      "note": "우산 챙기는 게 안전"
-    },
     {
       "datetime": "2026-07-04T07:00:00",
       "hour": 7,
@@ -348,6 +334,34 @@
     {
       "datetime": "2026-07-05T05:00:00",
       "hour": 5,
+      "score": 84.0,
+      "weather_score": 34.0,
+      "air_score": 50.0,
+      "tmp": 23.0,
+      "pop": 30.0,
+      "wsd": 1.4,
+      "reh": 95.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-07-05T06:00:00",
+      "hour": 6,
+      "score": 84.0,
+      "weather_score": 34.0,
+      "air_score": 50.0,
+      "tmp": 23.0,
+      "pop": 30.0,
+      "wsd": 1.4,
+      "reh": 95.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-07-05T07:00:00",
+      "hour": 7,
       "score": 84.0,
       "weather_score": 34.0,
       "air_score": 50.0,
