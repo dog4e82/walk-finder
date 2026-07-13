@@ -1,42 +1,28 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-07-14T06:08",
+  "generated_at": "2026-07-14T07:05",
   "air": {
     "pm10": 12.0,
-    "pm25": 2.0,
+    "pm25": 1.0,
     "label": "좋음",
     "station": "삼천동",
-    "measured_at": "2026-07-14 05:00"
+    "measured_at": "2026-07-14 06:00"
   },
   "best_time": {
-    "datetime": "2026-07-14T06:00:00",
-    "hour": 6,
-    "score": 84.0,
-    "weather_score": 34.0,
+    "datetime": "2026-07-14T07:00:00",
+    "hour": 7,
+    "score": 77.0,
+    "weather_score": 27.0,
     "air_score": 50.0,
-    "tmp": 26.0,
+    "tmp": 27.0,
     "pop": 30.0,
-    "wsd": 3.7,
+    "wsd": 4.1,
     "reh": 90.0,
     "sky_text": "흐림",
     "pty_text": "없음",
-    "note": "우산 챙기는 게 안전"
+    "note": "조금 춥거나 더움, 우산 챙기는 게 안전"
   },
   "hourly": [
-    {
-      "datetime": "2026-07-14T06:00:00",
-      "hour": 6,
-      "score": 84.0,
-      "weather_score": 34.0,
-      "air_score": 50.0,
-      "tmp": 26.0,
-      "pop": 30.0,
-      "wsd": 3.7,
-      "reh": 90.0,
-      "sky_text": "흐림",
-      "pty_text": "없음",
-      "note": "우산 챙기는 게 안전"
-    },
     {
       "datetime": "2026-07-14T07:00:00",
       "hour": 7,
@@ -369,6 +355,20 @@
       "pop": 60.0,
       "wsd": 4.3,
       "reh": 100.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "강수 중"
+    },
+    {
+      "datetime": "2026-07-15T07:00:00",
+      "hour": 7,
+      "score": 62.0,
+      "weather_score": 12.0,
+      "air_score": 50.0,
+      "tmp": 25.0,
+      "pop": 60.0,
+      "wsd": 3.9,
+      "reh": 95.0,
       "sky_text": "흐림",
       "pty_text": "비",
       "note": "강수 중"
