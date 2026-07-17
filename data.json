@@ -1,12 +1,12 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-07-17T20:36",
+  "generated_at": "2026-07-17T22:57",
   "air": {
-    "pm10": 22.0,
-    "pm25": 19.0,
+    "pm10": 20.0,
+    "pm25": 17.0,
     "label": "보통",
-    "station": "소룡동",
-    "measured_at": "2026-07-17 20:00"
+    "station": "노송동",
+    "measured_at": "2026-07-17 22:00"
   },
   "best_time": {
     "datetime": "2026-07-18T06:00:00",
@@ -23,20 +23,6 @@
     "note": "우산 챙기는 게 안전"
   },
   "hourly": [
-    {
-      "datetime": "2026-07-17T21:00:00",
-      "hour": 21,
-      "score": 65.0,
-      "weather_score": 27.0,
-      "air_score": 38.0,
-      "tmp": 27.0,
-      "pop": 30.0,
-      "wsd": 0.7,
-      "reh": 90.0,
-      "sky_text": "흐림",
-      "pty_text": "없음",
-      "note": "조금 춥거나 더움, 우산 챙기는 게 안전"
-    },
     {
       "datetime": "2026-07-17T22:00:00",
       "hour": 22,
@@ -358,6 +344,34 @@
       "sky_text": "흐림",
       "pty_text": "비",
       "note": "조금 춥거나 더움, 강수 중"
+    },
+    {
+      "datetime": "2026-07-18T21:00:00",
+      "hour": 21,
+      "score": 43.0,
+      "weather_score": 5.0,
+      "air_score": 38.0,
+      "tmp": 27.0,
+      "pop": 60.0,
+      "wsd": 1.5,
+      "reh": 90.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "조금 춥거나 더움, 강수 중"
+    },
+    {
+      "datetime": "2026-07-18T22:00:00",
+      "hour": 22,
+      "score": 50.0,
+      "weather_score": 12.0,
+      "air_score": 38.0,
+      "tmp": 26.0,
+      "pop": 60.0,
+      "wsd": 1.9,
+      "reh": 90.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "강수 중"
     }
   ]
 }
