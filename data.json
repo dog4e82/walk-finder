@@ -1,12 +1,12 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-07-19T06:02",
+  "generated_at": "2026-07-19T06:59",
   "air": {
-    "pm10": 9.0,
-    "pm25": 3.0,
+    "pm10": 19.0,
+    "pm25": 11.0,
     "label": "좋음",
-    "station": "소룡동",
-    "measured_at": "2026-07-19 05:00"
+    "station": "노송동",
+    "measured_at": "2026-07-19 06:00"
   },
   "best_time": {
     "datetime": "2026-07-19T20:00:00",
