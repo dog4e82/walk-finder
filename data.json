@@ -1,6 +1,6 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-08-08T02:55",
+  "generated_at": "2026-08-08T04:09",
   "air": {
     "pm10": -1,
     "pm25": -1,
@@ -23,20 +23,6 @@
     "note": "산책 좋음"
   },
   "hourly": [
-    {
-      "datetime": "2026-08-08T03:00:00",
-      "hour": 3,
-      "score": 52.0,
-      "weather_score": 27.0,
-      "air_score": 25.0,
-      "tmp": 27.0,
-      "pop": 30.0,
-      "wsd": 0.7,
-      "reh": 75.0,
-      "sky_text": "흐림",
-      "pty_text": "없음",
-      "note": "조금 춥거나 더움, 우산 챙기는 게 안전"
-    },
     {
       "datetime": "2026-08-08T04:00:00",
       "hour": 4,
@@ -354,6 +340,34 @@
       "tmp": 26.0,
       "pop": 20.0,
       "wsd": 3.0,
+      "reh": 80.0,
+      "sky_text": "구름많음",
+      "pty_text": "없음",
+      "note": "산책 좋음"
+    },
+    {
+      "datetime": "2026-08-09T03:00:00",
+      "hour": 3,
+      "score": 70.0,
+      "weather_score": 45.0,
+      "air_score": 25.0,
+      "tmp": 26.0,
+      "pop": 20.0,
+      "wsd": 2.6,
+      "reh": 80.0,
+      "sky_text": "구름많음",
+      "pty_text": "없음",
+      "note": "산책 좋음"
+    },
+    {
+      "datetime": "2026-08-09T04:00:00",
+      "hour": 4,
+      "score": 70.0,
+      "weather_score": 45.0,
+      "air_score": 25.0,
+      "tmp": 25.0,
+      "pop": 20.0,
+      "wsd": 2.2,
       "reh": 80.0,
       "sky_text": "구름많음",
       "pty_text": "없음",
