@@ -1,6 +1,6 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-08-10T17:47",
+  "generated_at": "2026-08-10T19:33",
   "air": {
     "pm10": -1,
     "pm25": -1,
@@ -23,20 +23,6 @@
     "note": "우산 챙기는 게 안전"
   },
   "hourly": [
-    {
-      "datetime": "2026-08-10T18:00:00",
-      "hour": 18,
-      "score": 63.0,
-      "weather_score": 38.0,
-      "air_score": 25.0,
-      "tmp": 30.0,
-      "pop": 20.0,
-      "wsd": 3.8,
-      "reh": 55.0,
-      "sky_text": "구름많음",
-      "pty_text": "없음",
-      "note": "조금 춥거나 더움"
-    },
     {
       "datetime": "2026-08-10T19:00:00",
       "hour": 19,
@@ -358,6 +344,34 @@
       "sky_text": "맑음",
       "pty_text": "없음",
       "note": "기온 부담"
+    },
+    {
+      "datetime": "2026-08-11T18:00:00",
+      "hour": 18,
+      "score": 63.0,
+      "weather_score": 38.0,
+      "air_score": 25.0,
+      "tmp": 30.0,
+      "pop": 0.0,
+      "wsd": 2.4,
+      "reh": 55.0,
+      "sky_text": "맑음",
+      "pty_text": "없음",
+      "note": "조금 춥거나 더움"
+    },
+    {
+      "datetime": "2026-08-11T19:00:00",
+      "hour": 19,
+      "score": 63.0,
+      "weather_score": 38.0,
+      "air_score": 25.0,
+      "tmp": 29.0,
+      "pop": 0.0,
+      "wsd": 2.5,
+      "reh": 60.0,
+      "sky_text": "맑음",
+      "pty_text": "없음",
+      "note": "조금 춥거나 더움"
     }
   ]
 }
