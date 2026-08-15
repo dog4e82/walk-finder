@@ -1,11 +1,11 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-08-15T15:53",
+  "generated_at": "2026-08-15T16:37",
   "air": {
     "pm10": -1.0,
     "pm25": -1.0,
     "label": "측정값 없음",
-    "station": "삼천동",
+    "station": "노송동",
     "measured_at": null
   },
   "best_time": {
@@ -23,20 +23,6 @@
     "note": "우산 챙기는 게 안전"
   },
   "hourly": [
-    {
-      "datetime": "2026-08-15T15:00:00",
-      "hour": 15,
-      "score": 42.0,
-      "weather_score": 17.0,
-      "air_score": 25.0,
-      "tmp": 31.0,
-      "pop": 30.0,
-      "wsd": 1.1,
-      "reh": 60.0,
-      "sky_text": "흐림",
-      "pty_text": "없음",
-      "note": "기온 부담, 우산 챙기는 게 안전"
-    },
     {
       "datetime": "2026-08-15T16:00:00",
       "hour": 16,
@@ -368,6 +354,20 @@
       "tmp": 28.0,
       "pop": 60.0,
       "wsd": 2.0,
+      "reh": 80.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "조금 춥거나 더움, 강수 중"
+    },
+    {
+      "datetime": "2026-08-16T16:00:00",
+      "hour": 16,
+      "score": 30.0,
+      "weather_score": 5.0,
+      "air_score": 25.0,
+      "tmp": 28.0,
+      "pop": 60.0,
+      "wsd": 2.3,
       "reh": 80.0,
       "sky_text": "흐림",
       "pty_text": "비",
