@@ -1,12 +1,12 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-08-15T23:33",
+  "generated_at": "2026-08-16T00:30",
   "air": {
-    "pm10": -1.0,
-    "pm25": -1.0,
+    "pm10": -1,
+    "pm25": -1,
     "label": "측정값 없음",
-    "station": "신태인",
-    "measured_at": null
+    "station": "활용신청 대기 중",
+    "measured_at": ""
   },
   "best_time": {
     "datetime": "2026-08-16T06:00:00",
@@ -348,6 +348,20 @@
     {
       "datetime": "2026-08-16T23:00:00",
       "hour": 23,
+      "score": 37.0,
+      "weather_score": 12.0,
+      "air_score": 25.0,
+      "tmp": 24.0,
+      "pop": 60.0,
+      "wsd": 1.0,
+      "reh": 90.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "강수 중"
+    },
+    {
+      "datetime": "2026-08-17T00:00:00",
+      "hour": 0,
       "score": 37.0,
       "weather_score": 12.0,
       "air_score": 25.0,
