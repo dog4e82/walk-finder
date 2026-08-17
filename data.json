@@ -1,12 +1,12 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-08-18T03:52",
+  "generated_at": "2026-08-18T04:35",
   "air": {
-    "pm10": 9.0,
-    "pm25": 7.0,
+    "pm10": 12.0,
+    "pm25": 5.0,
     "label": "좋음",
     "station": "노송동",
-    "measured_at": "2026-08-18 03:00"
+    "measured_at": "2026-08-18 04:00"
   },
   "best_time": {
     "datetime": "2026-08-18T20:00:00",
@@ -23,20 +23,6 @@
     "note": "산책 좋음"
   },
   "hourly": [
-    {
-      "datetime": "2026-08-18T03:00:00",
-      "hour": 3,
-      "score": 95.0,
-      "weather_score": 45.0,
-      "air_score": 50.0,
-      "tmp": 24.0,
-      "pop": 20.0,
-      "wsd": 0.9,
-      "reh": 100.0,
-      "sky_text": "구름많음",
-      "pty_text": "없음",
-      "note": "산책 좋음"
-    },
     {
       "datetime": "2026-08-18T04:00:00",
       "hour": 4,
@@ -372,6 +358,20 @@
       "sky_text": "흐림",
       "pty_text": "없음",
       "note": "우산 챙기는 게 안전"
+    },
+    {
+      "datetime": "2026-08-19T04:00:00",
+      "hour": 4,
+      "score": 62.0,
+      "weather_score": 12.0,
+      "air_score": 50.0,
+      "tmp": 24.0,
+      "pop": 60.0,
+      "wsd": 0.2,
+      "reh": 95.0,
+      "sky_text": "흐림",
+      "pty_text": "비",
+      "note": "강수 중"
     }
   ]
 }
