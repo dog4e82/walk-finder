@@ -1,6 +1,6 @@
 {
   "school": "전북과학고등학교",
-  "generated_at": "2026-08-21T02:38",
+  "generated_at": "2026-08-21T03:54",
   "air": {
     "pm10": -1,
     "pm25": -1,
@@ -358,6 +358,20 @@
       "sky_text": "구름많음",
       "pty_text": "없음",
       "note": "산책 좋음"
+    },
+    {
+      "datetime": "2026-08-22T03:00:00",
+      "hour": 3,
+      "score": 59.0,
+      "weather_score": 34.0,
+      "air_score": 25.0,
+      "tmp": 24.0,
+      "pop": 30.0,
+      "wsd": 0.6,
+      "reh": 95.0,
+      "sky_text": "흐림",
+      "pty_text": "없음",
+      "note": "우산 챙기는 게 안전"
     }
   ]
 }
